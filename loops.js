@@ -10,10 +10,10 @@
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
-
-
-
-
+const star = '*'
+for (let b = 0; b < 5; b++) {
+    console.log(star.repeat(1+b));
+}
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
@@ -24,9 +24,10 @@
 // loop...
 // klaar!
 // ==========================================
-
-
-
+for (let b = 0; b < 4; b++) {
+    console.log('loop...');
+}
+console.log('klaar!')
 
 
 // ==========================================
@@ -44,9 +45,15 @@
 // >> 8
 // >> 9
 // ==========================================
-
-
-
+for (let b = 0; b < 3; b++) {
+    console.log(b);
+}
+for (let c = 3; c < 6; c++) {
+    console.log('> '+c);
+}
+for (let d = 6; d < 10; d++) {
+    console.log('>> '+d);
+}
 
 
 // ==========================================
@@ -86,6 +93,8 @@
 // FizzBuzz
 // etc.
 // ==========================================
-
+for (let i = 0; i < ; i++) {
+    
+}
 
 
