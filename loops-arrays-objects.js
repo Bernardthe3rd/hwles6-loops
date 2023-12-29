@@ -15,9 +15,9 @@ const scores = [
 // 92
 // 66
 // ==========================================
-
-
-
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+}
 
 
 // ==========================================
@@ -31,7 +31,16 @@ const scores = [
 // A
 // D
 // ==========================================
-
+for (let i = 0; i < scores.length; i++) {
+    switch (scores){
+        case scores[i].score < 60:
+            console.log('F')
+            break;
+        case scores[i].score < 70:
+            console.log('D')
+    }
+    console.log(scores[i].score);
+}
 
 
 
