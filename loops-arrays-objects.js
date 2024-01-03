@@ -15,9 +15,9 @@ const scores = [
 // 92
 // 66
 // ==========================================
-
-
-
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+}
 
 
 // ==========================================
@@ -31,9 +31,19 @@ const scores = [
 // A
 // D
 // ==========================================
-
-
-
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60) {
+        console.log('F');
+    } else if (scores[i].score < 70) {
+        console.log('D');
+    } else if (scores[i].score < 80) {
+        console.log('C');
+    } else if (scores[i].score < 90) {
+        console.log('B');
+    } else if (scores[i].score < 100) {
+        console.log('A');
+    }
+}
 
 
 // ==========================================
@@ -48,8 +58,22 @@ const scores = [
 //  { name: 'Rianne', score: 66, grade: 'D' }
 //  ];
 // ==========================================
+console.log(scores);
 
-
+for (let j = 0; j < scores.length; j++) {
+    if (scores[j].score < 60) {
+        scores[j].grade = 'F';
+    } else if (scores[j].score < 70) {
+        scores[j].grade = 'D';
+    } else if (scores[j].score < 80) {
+        scores[j].grade = 'C';
+    } else if (scores[j].score < 90) {
+        scores[j].grade = 'B';
+    } else if (scores[j].score < 100) {
+        scores[j].grade = 'A';
+    }
+}
+console.log(scores);
 
 
 
@@ -74,16 +98,23 @@ const NOVIEmployees = [
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
 //  ];
 // ==========================================
+console.log(NOVIEmployees);
 
+for (let k = 0; k < NOVIEmployees.length ; k++) {
+    NOVIEmployees[k].email = NOVIEmployees[k].firstName+'.'+NOVIEmployees[k].lastName+'@novi.nl'.toLowerCase();
+}
 
-
-
+console.log(NOVIEmployees);
 
 
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
+for (let l = 0; l < NOVIEmployees.length ; l++) {
+    NOVIEmployees[l].email = NOVIEmployees[l].firstName.toLowerCase()+'.'+NOVIEmployees[l].lastName.toLowerCase()+'@novi.nl';
+}
 
+console.log(NOVIEmployees);
 
 
 
@@ -130,6 +161,32 @@ const students = [
 //     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' }
 // ]
 // ==========================================
-
-
+for (let m = 0; m < students.length; m++) {
+    switch (students[m].zipCode) {
+        case "3513":
+            students[m].neighborhood = 'Pijlsweerd';
+            break;
+        case "3514":
+            students[m].neighborhood = 'Vogelenbuurt';
+            break;
+        case "3512":
+            students[m].neighborhood = 'Binnenstad';
+            break;
+        case "3531":
+            students[m].neighborhood = 'Lombok';
+            break;
+        case "3572":
+            students[m].neighborhood = 'Wittevrouwen';
+            break;
+        case "3581":
+            students[m].neighborhood = 'Oudwijk';
+            break;
+        case "3583":
+            students[m].neighborhood = 'Schilderbuurt';
+            break;
+        default:
+            ('You dont belong in any neighborhood');
+    }
+}
+console.log(students);
 
